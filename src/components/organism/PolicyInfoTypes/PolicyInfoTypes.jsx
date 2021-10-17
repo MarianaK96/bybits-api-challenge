@@ -25,7 +25,13 @@ const PolicyInfoTypes = ({
           <PolicyType>ESSENTIAL INFORMATION</PolicyType>
 
           {policyInfo.map((item) => {
-            return <PolicyInfo title={item.title} info={item.info} />;
+            return (
+              <PolicyInfo
+                key={item.title}
+                title={item.title}
+                info={item.info}
+              />
+            );
           })}
         </EssPolicyInfo>
 
@@ -36,7 +42,13 @@ const PolicyInfoTypes = ({
         >
           <PolicyType>ADDITIONAL INFORMATION</PolicyType>
           {addPolicyInfo.map((item) => {
-            return <PolicyInfo title={item.title} info={item.info} />;
+            return (
+              <PolicyInfo
+                key={item.title}
+                title={item.title}
+                info={item.info}
+              />
+            );
           })}
         </AddPolicyInfo>
       </PolicyInfoContainer>

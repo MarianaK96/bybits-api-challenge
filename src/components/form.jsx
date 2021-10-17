@@ -1,17 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { login } from "../services/AuthService";
-import { determineMessage } from "../utils/errorHandling";
+// import { determineMessage } from "../utils/errorHandling";
 
 const Form = () => {
-  const [responseData, setResponseData] = useState(null);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  //   useEffect(() => {
-  //     const errorMessage = determineMessage(responseData);
-  //     setErrorMessage(errorMessage);
-  //   }, [responseData]);
+  // const [errorMessage, setErrorMessage] = useState("");
 
   return (
     <>

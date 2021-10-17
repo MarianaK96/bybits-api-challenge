@@ -34,7 +34,7 @@ export const LabelStyle = styled.label`
   font-family: "Montserrat", sans-serif;
 `;
 
-export const InputsContainer = styled.div`
+export const InputsContainer = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
