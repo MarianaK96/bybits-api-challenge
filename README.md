@@ -16,3 +16,4 @@ A completed technical challenge in which using a Policy API, a web application w
 - If I had more time to spend on this I would have liked to created an error message for when authentication was not successful
 - I would have added some functionality to the 'forgot password' element
 - I would have created tests to run
+
