@@ -21,7 +21,8 @@ const LoginInputs = () => {
     <>
       <InputsContainer>
         <InputsStyle
-          type="text"
+          type="email"
+          required
           placeholder="username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
@@ -29,6 +30,7 @@ const LoginInputs = () => {
         <PassContainer>
           <InputsStyle
             type={passwordVisible ? "text" : "password"}
+            required
             placeholder="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
