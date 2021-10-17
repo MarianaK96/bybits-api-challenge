@@ -16,5 +16,3 @@ A completed technical challenge in which using a Policy API, a web application w
 - Frontend / backend form validation needs to be added for email / password
 - Error messaging to be added on login form for validation / server errors etc.
 - 'Forgot password' element should prompt for reset, sending reset link to user
--
--
