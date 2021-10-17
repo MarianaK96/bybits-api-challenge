@@ -20,6 +20,7 @@ export const EssPolicyTypeSmall = styled.h1`
   margin-right: 1rem;
   margin-left: 1rem;
   border-bottom: 1px solid #807373;
+  cursor: pointer;
   opacity: ${({ visibility }) => (visibility ? "0.5" : "1")};
 `;
 
@@ -32,5 +33,6 @@ export const AddPolicyTypeSmall = styled.h1`
   margin-right: 1rem;
   margin-left: 1rem;
   border-bottom: 1px solid #807373;
+  cursor: pointer;
   opacity: ${({ visibility }) => (visibility ? "1" : "0.5")};
 `;

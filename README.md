@@ -13,7 +13,6 @@ A completed technical challenge in which using a Policy API, a web application w
 
 ## To do...
 
-- If I had more time to spend on this I would have liked to created an error message for when authentication was not successful
-- I would have added some functionality to the 'forgot password' element
-- I would have created tests to run
-
+- Frontend / backend form validation needs to be added for email / password
+- Error messaging to be added on login form for validation / server errors etc.
+- 'Forgot password' element should prompt for reset, sending reset link to user

@@ -3,11 +3,11 @@ import { device } from "../../../globals/breakpoints";
 import { Link } from "react-router-dom";
 
 export const LogoutBtnStyles = styled(Link)`
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  position: absolute;
+  top: 0.95rem;
+  right: 2.2rem;
   border: none;
   background-color: transparent;
-  align-self: flex-end;
   cursor: pointer;
   text-decoration: none;
 
@@ -27,8 +27,4 @@ export const LogoutBtnStyles = styled(Link)`
     font-size: 1.2rem;
   }
 }
-
-
-
-
 `;
