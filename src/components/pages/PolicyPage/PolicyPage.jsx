@@ -31,6 +31,7 @@ const PolicyPage = () => {
   return (
     <>
       <PolicyPageStyles>
+        <LogoutBtn />
         <PolicyTitle name={firstName} />
         <PolicyTitles visibility={visibility} setVisibility={setVisibility} />
         <PolicyInfoTypes
@@ -41,7 +42,6 @@ const PolicyPage = () => {
           policyInfo={policyInfo}
           addPolicyInfo={addPolicyInfo}
         />
-        <LogoutBtn />
       </PolicyPageStyles>
     </>
   );

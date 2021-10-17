@@ -25,26 +25,3 @@ export const login = async (username, password) => {
 
   return response;
 };
-
-//can access cookies anywhere
-//in policy API call read cookie in authorization header such as Authorization: `Bearer ${authToken}`
-
-// try {
-//     const requestData = { username: username, password: password };
-
-//     const response = await fetch(`https://api.bybits.co.uk/auth/token`, {
-//       method: "POST",
-//       headers: {
-//         environment: "moc",
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(requestData),
-//     });
-
-//     if (response.status !== 200) throw response.status;
-
-//     return response;
-//   } catch (error) {
-//     console.log("error : ", error);
-//     return error;
-//   }

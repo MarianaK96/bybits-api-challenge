@@ -66,16 +66,3 @@ export const getPolicy = (cookie) => {
       return policyObject;
     });
 };
-
-// export const asyncGetPolicy = async () => {
-//   const data = await fetch(`https://api.bybits.co.uk/policys/details`, {
-//     method: "GET",
-//     headers: {
-//       Authorization: `Bearer ${"cookie"}`,
-//       Environment: "mock",
-//       "Content-Type": "application/json",
-//     },
-//   });
-
-//   console.log("get async running", data);
-// };
