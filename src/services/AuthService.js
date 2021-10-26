@@ -1,7 +1,5 @@
-import { getPolicy } from "./PolicyService";
-
 export const login = async (username, password) => {
-  const requestData = { username: username, password: password };
+  const bodyData = { username: username, password: password };
 
   const response = await fetch(`https://api.bybits.co.uk/auth/token`, {
     method: "POST",
@@ -9,19 +7,12 @@ export const login = async (username, password) => {
       environment: "mock",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(requestData),
-  })
-    .then((response) => {
-      const data = response.json();
-      return data;
-    })
-    .then((data) => {
-      const accessToken = data.access_token;
-      document.cookie = accessToken;
-      const cookie = document.cookie;
-      getPolicy(cookie);
-      return cookie;
-    });
+    body: JSON.stringify(bodyData),
+  });
+
+  const data = await response.json();
+  const accessToken = `auth=${data.access_token};`;
+  document.cookie = accessToken;
 
   return response;
 };

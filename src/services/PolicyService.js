@@ -1,8 +1,10 @@
-export const getPolicy = (cookie) => {
+import { getCookie } from "./../utils/cookies";
+
+export const getPolicy = () => {
   return fetch(`https://api.bybits.co.uk/policys/details`, {
     method: "GET",
     headers: {
-      Authorization: `Bearer ${cookie}`,
+      Authorization: `Bearer ${getCookie("auth")}`,
       Environment: "mock",
       "Content-Type": "application/json",
     },
